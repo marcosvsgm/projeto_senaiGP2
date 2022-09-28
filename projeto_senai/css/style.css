@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    
   }
   
   * {
@@ -13,7 +14,10 @@ body {
     background-color: #f2f2f2;
     padding: 20px 0 30px 0;
   } 
-  
+  .img-fluid{
+    width: 600px;
+    margin-left: 150px;
+  }
   /* style inputs and link buttons */
   input,
   .btn {
@@ -28,20 +32,31 @@ body {
     line-height: 20px;
     text-decoration: none; /* remove underline from anchors */
   }
+
+  .pesq{
+    width: 50%;
+    padding: 50px;
+    margin-left: 220px;
+    margin-top: 50px;
+  }
+
+  .pesq1{
+    width: 30%;
+    padding: 30px;
+    margin-left: 300px;
+    margin-top: 30px;
+  }
+
+  h1{
+    margin-left: 280px;
+    margin-top: 100px;
+  }
   
   input:hover,
   .btn:hover {
     opacity: 1;
   }
-  a {
-    background-color: #002df5;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
+  
   
   /* add appropriate colors to fb, twitter and google buttons */
   .fb {

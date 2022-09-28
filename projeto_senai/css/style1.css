@@ -1,5 +1,16 @@
 body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+
+form {
+background-color: #2976db;}
+
+.imgcontainer{
+  background-color: #2976db;
+}
+.senai{
+  width: 400px;
+  margin-left: 370px;
+}
+
 
 input[type=text], input[type=password] {
   width: 100%;
@@ -10,18 +21,27 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-a {
-  background-color: #04AA6D;
-  color: white;
+.button1{
+  margin-left: 630px;
+}
+
+button{
+  background-color: #2976db;
+  color: rgb(255, 255, 255);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 10%;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 button:hover {
   opacity: 0.8;
+  background-color: #1100ff;
+  color: rgb(255, 255, 255);
+  
 }
 
 .cancelbtn {
@@ -48,6 +68,8 @@ span.psw {
   float: right;
   padding-top: 16px;
 }
+
+
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
