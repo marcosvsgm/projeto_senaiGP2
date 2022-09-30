@@ -1,10 +1,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    
+
   }
   
   * {
     box-sizing: border-box;
+    
   }
   
   /* style the container */
@@ -15,7 +16,7 @@ body {
     padding: 20px 0 30px 0;
   } 
   .img-fluid{
-    width: 600px;
+    width: 700px;
     margin-left: 150px;
   }
   /* style inputs and link buttons */
