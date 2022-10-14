@@ -9,6 +9,7 @@
 
 
     <style>
+    
     .senai {
         width: 450px;
         margin-left: 700px;
@@ -90,9 +91,9 @@
 
     <br>
 
-    <a href="index.php" class="btn btn-primary button button1">Ótimo</a>
-    <a href="index.php" class="btn btn-primary button button2">Bom</a>
-    <a href="index.php" class="btn btn-primary button button3">Regular</a>
+    <a href="resultados.php" class="btn btn-primary button button1">Ótimo</a>
+    <a href="resultados.php" class="btn btn-primary button button2">Bom</a>
+    <a href="resultados.php" class="btn btn-primary button button3">Regular</a>
     </div>
 
 
