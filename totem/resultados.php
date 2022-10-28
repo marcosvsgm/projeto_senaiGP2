@@ -23,13 +23,11 @@
         width: 450px;
         margin-left: 690px;
         margin-top: 30px;
-        
+
 
     }
 
     table {
-       
-
 
     }
 
@@ -50,77 +48,54 @@
 </head>
 
 <body>
-<img class="senai" src="img/senai.jpg" alt="senai"/>
+        <?php
+        require 'conexao.php';
+        ?>
+        <table width="1000" borde="1px">0
+            <tr>
+                <th> Cod</th>
+                <th> Pergunta1</th>
+                <th> Pergunta2</th>
+                <th> Pergunta3</th>
+                <th> Pergunta4</th>
+                <th> Pergunta5</th>
+                <th> Pergunta6</th>
+                <th> Pergunta7</th>
+                <th> Pergunta8</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            #Select da tabela de listagem
+            $Mihaquery1 = 'SELECT * FROM tb_';
+            try {
+                $Minhavariaveldeleitura = $pdo->prepare($Mihaquery1);
+                $Minhavariaveldeleitura->execute();
+            }
+            catch (PDOException $e) {
+                echo $e->getTMessage();
+            }
 
-
-    <div class="container">
-
-       
-
-
-        <table class="table">
-            <thead>
+            while ($rs = $Minhavariaveldeleitura->fetch(PDO::FETCH_OBJ)) {
+                ?>
                 <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Pergunta 1</th>
-                    <th scope="col">Pergunta 2</th>
-                    <th scope="col">Pergunta 3</th>
-                    <th scope="col">Pergunta 4</th>
-                    <th scope="col">Pergunta 5</th>
-                    <th scope="col">Pergunta 6</th>
-                    <th scope="col">Pergunta 7</th>
-                    <th scope="col">Pergunta 8</th>
+                    <td><?php echo $rs->id; ?></td>
+                    <td><?php echo $rs->Pergunta1; ?></td>
+                    <td><?php echo $rs->Pergunta2; ?></td>
+                    <td><?php echo $rs->Pergunta3; ?></td>
+                    <td><?php echo $rs->Pergunta4; ?></td>
+                    <td><?php echo $rs->Pergunta5; ?></td>
+                    <td><?php echo $rs->Pergunta6; ?></td>
+                    <td><?php echo $rs->Pergunta7; ?></td>
+                    <td><?php echo $rs->Pergunta8; ?></td>
                 </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Otimo</td>
-                    <td>Bom</td>
-                    <td>Regular</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Bom </td>
-                    <td>Regular</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Bom </td>
-                    <td>Regular</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                    <td>Otimo</td>
-                </tr>
-            </tbody>
-        </table>
+            <?php } ?>
+        </tbody>
+    </table>
+        <br><!-- comment -->
+<a href='index.php'><button>Voltar ao Início</button></a>
 
-
-
-
-
-
-
-
-        </form>
-
-    </div>
-
-
-</body>
+<!-- JavaScript Bundle with Popper Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </html>
